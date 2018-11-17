@@ -11,7 +11,7 @@ const sassOptions = {
 };
 
 gulp.task('sass', () => {
-    return gulp.src('./assets/scss/**/*.scss')
+    return gulp.src('./assets/scss/*.scss')
         .pipe(sass())
         .pipe(autoprefixer({
             browsers: ['last 15 versions'],
@@ -22,7 +22,7 @@ gulp.task('sass', () => {
     });
 
 gulp.task('babel', () => {
-    gulp.src('./assets/scripts/**/*.js')
+    return gulp.src('./assets/scripts/*.js')
     .pipe(babel({
         "presets": [
             ["env", {
@@ -45,8 +45,8 @@ gulp.task('serve', () => {
 })
 
 gulp.task('watch', ['sass', 'babel'], () => {
-    gulp.watch('./assets/css/scss/**/*.scss', ['sass']);
-    gulp.watch('./assets/js/**/*.js', ['babel']);
+    gulp.watch('./assets/scss/*.scss', ['sass']);
+    gulp.watch('./assets/scripts/*.js', ['babel']);
 });
 
 gulp.task('default', ['watch']);
