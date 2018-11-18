@@ -42,6 +42,7 @@ main {
         }
 
         .start-section {
+            padding-top: 20%;
 
             @media screen and (max-width: 767px) {
                 // height: 100vh;
@@ -52,12 +53,28 @@ main {
 
     #user-interaction {
 
+        display: none;
+
         .btn-multichoice {
             transition: all 0.3s ease-in;
             
             &.active {
                 background: #6ace8b;
                 border-color: #4a9262;
+            }
+        }
+    }
+
+    #analysis {
+
+        display: none;
+
+        .explanation {
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        
+            p {
+                padding: 10px;
             }
         }
     }

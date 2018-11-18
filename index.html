@@ -31,7 +31,7 @@
                 <h1>bwoke.</h1>
                 <p class="subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p class="subheading">Ut volutpat lacinia magna porta lacinia. Duis pharetra felis et elit vestibulum congue.</p>
-                <button class="btn btn-lg btn-bwoke">Start</button>
+                <button id="start-btn" class="btn btn-lg btn-bwoke">Start</button>
             </section>
             <section class="col-md-5 pull-left hidden-xs">
                     <img src="assets/img/main_edit_before_after.png" class="img-rounded img-responsive" alt="">
@@ -47,19 +47,27 @@
                 <section class="col-md-6">
                     <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
                     <div class="row">
-                        <div class="col-xs-4 btn btn-default btn-multichoice" role="button">Option 1</div>
-                        <div class="col-xs-4 btn btn-default btn-multichoice active" role="button">Option 2</div>
-                        <div class="col-xs-4 btn btn-default btn-multichoice" role="button">Option 3</div>
+                        <div class="col-xs-4 btn btn-default btn-multichoice" role="button" data-toggle="tooltip" title="Lorem ipsum">Option 1</div>
+                        <div class="col-xs-4 btn btn-default btn-multichoice" role="button" data-toggle="tooltip" title="Lorem ipsum">Option 2</div>
+                        <div class="col-xs-4 btn btn-default btn-multichoice" role="button" data-toggle="tooltip" title="Lorem ipsum">Option 3</div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-4 btn btn-default btn-multichoice" role="button">Option 4</div>
-                        <div class="col-xs-4 btn btn-default btn-multichoice" role="button">Option 5</div>
-                        <div class="col-xs-4 btn btn-default btn-multichoice active" role="button">Option 6</div>
+                        <div class="col-xs-4 btn btn-default btn-multichoice" role="button" data-toggle="tooltip" title="Lorem ipsum">Option 4</div>
+                        <div class="col-xs-4 btn btn-default btn-multichoice" role="button" data-toggle="tooltip" title="Lorem ipsum">Option 5</div>
+                        <div class="col-xs-4 btn btn-default btn-multichoice" role="button" data-toggle="tooltip" title="Lorem ipsum">Option 6</div>
                     </div>
                 </section>
             </div>
         </section>
         
+        <section id="analysis" class="container">
+            <div class="row">
+                <article class="col-xs-12 explanation">
+                    <p>In orci quam, molestie ut varius vel, sollicitudin vitae nulla. Vivamus pretium consectetur nisi ac auctor. Nam eu eros faucibus, vestibulum urna quis, varius augue. Morbi et tincidunt ante. Cras mattis lacus diam. Proin sagittis tellus vitae leo venenatis, sed ultricies sem maximus. Curabitur et varius enim. Maecenas dignissim ultricies arcu nec luctus. Praesent porta arcu et nisl tristique, ac semper ante ornare. Morbi venenatis nisi eros, eget ultrices magna elementum non.</p>
+                </article>
+            </div>
+        </section>
+
     </main>
 
     
@@ -69,5 +77,10 @@
     <script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <!-- Application JavaScript -->
     <script src="build/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+        });
+    </script>
 </body>
 </html>
