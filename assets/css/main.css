@@ -65,4 +65,33 @@ main #analysis .explanation p {
 .tooltip-inner {
     padding: 5px 20px;
 }
+
+
+.box {
+    display: none;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #ff5722;
+    /* Currently the whole screen is shadowed when a cursot is over it. 
+    Maybe we don't need this part or we may want to shadow only the image. */
+    box-shadow: 0 0 0 1000vmax rgba(0, 0, 0, .65);
+    pointer-events: none;
+  }
+
+  #nose {
+    top: 70%;
+    left: 45%;
+  }
   
+  #eye {
+    top: 10%;
+    left: 38%;
+  }
+  
+  #lips {
+    top: 50%;
+    left: 50%;
+  }

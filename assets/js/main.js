@@ -39,3 +39,25 @@ function checkIfAnalysisShouldBeRevealed() {
 function smoothScrollToTheBottomOfThePageWithjQuery() {
     $('html,body').animate({scrollTop: document.body.scrollHeight}, "slow");
 }
+
+function selectImagePart(element) {
+    var partName = element.getAttribute('selection-area');
+    document.getElementById(partName).style.display = "inline";
+    // document.getElementById('hidden-info-' + partName).style.display = "block";
+  }
+
+  function unselectImagePart(element) {
+    var partName = element.getAttribute('selection-area');
+    document.getElementById(partName).style.display = "none";
+    // document.getElementById('hidden-info-' + partName).style.display = "none";
+  }
+
+  var buttons = document.getElementsByClassName("btn-default");
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("mouseover", function() {
+      selectImagePart(this);
+    }, false);
+    buttons[i].addEventListener("mouseout", function() {
+      unselectImagePart(this);
+    }, false);
+  }
