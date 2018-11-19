@@ -4,6 +4,7 @@
   "description": "The Team Eleven Final SDLC Project.",
   "main": "index.js",
   "scripts": {
+    "start": "http-server ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,14 +18,6 @@
   },
   "homepage": "https://github.com/rafmosiolek/bwoke#readme",
   "devDependencies": {
-    "@babel/core": "^7.1.6",
-    "@babel/preset-env": "^7.1.6",
-    "babel-preset-env": "^1.7.0",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-babel": "^8.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-webserver": "^0.9.1",
-    "node-sass": "^4.10.0"
+    "http-server": "^0.11.1"
   }
 }

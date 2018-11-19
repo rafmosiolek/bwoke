@@ -1,9 +1,9 @@
-var multichoiceBtns = document.querySelectorAll('.btn-multichoice');
-var activeItems = [];
+const multichoiceBtns = document.querySelectorAll('.btn-multichoice');
+const activeItems = [];
 
-for (var i = 0; i < multichoiceBtns.length; i++) {
+for (let i = 0; i < multichoiceBtns.length; i++) {
     multichoiceBtns[i].addEventListener("click", function(ev) {
-        for (var i = 0; i < multichoiceBtns.length; i++) {
+        for (let i = 0; i < multichoiceBtns.length; i++) {
             checkIfAnalysisShouldBeRevealed();
             if (this != multichoiceBtns[i]) {
             } else if (this.classList.contains('active')) {
@@ -18,9 +18,9 @@ for (var i = 0; i < multichoiceBtns.length; i++) {
 };
 
 
-var startBtn = document.getElementById('start-btn');
-var userInteraction = document.getElementById('user-interaction');
-var analysis = document.getElementById('analysis');
+const startBtn = document.getElementById('start-btn');
+const userInteraction = document.getElementById('user-interaction');
+const analysis = document.getElementById('analysis');
 
 startBtn.addEventListener('click', () => {
     userInteraction.style.display = 'block';

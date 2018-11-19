@@ -1,16 +1,25 @@
-# bwoke
+# bwoke.
+
 Team Eleven Final SDLC Project
 
+Few words about the project goes here...
 
-After cloning the repo, run ``` npm install ``` in your terminal to install all the dependencies.
 
-To run the localserver, run ```gulp serve ```. It will open the local host on port 8000 (http://localhost:8000/)
+### How to install and run the app
 
-To compile SASS into the CSS run ```gulp sass```. It will also include autoprefixes for most of the browsers.
-To compile ES6+ to ES5, run ```gulp babel```. 
+1. Clone the repository: `$git clone https://github.com/rafmosiolek/bwoke.git`
+2. Run `npm install` to install all the dependencies
+3. Run `npm start` to run the localhost
+4. Navigate to http://127.0.0.1:8080/ or http://localhost:8080/ in your favourite browser.
 
-Run ```gulp watch``` to compile SCSS and JS into build folder on every save.
 
-## Please always work on separate branches and never pull anything to master without code review and confirming it with Katya or Raf.
+### File structure
 
-Compiled files are inside the build folder. Please, do not edit CSS/JS inside the build folder, it is going to be override after running the compiler. Work only with files inside the assets folder. (./assets/...). 
+You can find **index.html** and **package.json** files in the root folder.
+**Assets** folder contains of all the assets read by **index.html** when running the app - **CSS** files, **JavaScript** files, all the **media** (images and/or videos)
+**Vendor** folder contains of all the 3rd party libraries, APIs and frameworks that are read by **index.html** when running the app. Please include all the external files in **Vendor** folder and run it from there.
+
+### Merging and PRs
+
+Please make sure you always work on separate branch (you can name it the same way as the ticket from trello board). Please do not commit and push changes directly to `master` branch.
+When pushing to `master` from separate branch, create a Pull Request for others to review the changes.
