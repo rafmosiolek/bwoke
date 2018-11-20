@@ -47,8 +47,10 @@ startBtn.addEventListener('click', () => {
 function checkIfAnalysisShouldBeRevealed() {
     console.log('checkIfAnalysisShouldBeRevealed called');
     if (activeItems.length > 2) {
-        analysis.style.display = 'block';
+        // analysis.style.display = 'block';
         smoothScrollToTheBottomOfThePageWithjQuery();
+        revealTheBeforeAfterImages();
+        
         
     }
 }
@@ -91,3 +93,58 @@ function selectImagePart(element) {
   logoLink.addEventListener('click', () => {
       smoothScrollToTheTopOfThePageWithjQuery();
   })
+
+
+const multichoiceAnswers = document.querySelectorAll('.multichoice-answer');
+// for (let i = 0; i < multichoiceBtns.length; i++) {
+//     if (multichoiceBtns[i].id === option + (i + 1)) {
+        
+//     }
+//     for (let i = 0; i < multichoiceAnswers.length; i++) {
+//         console.log(multichoiceAnswers[i].id)
+//     }
+// }
+
+function revealTheBeforeAfterImages() {
+    const beforeAfterImgsWrapper = document.querySelector('.group-images');
+    beforeAfterImgsWrapper.style.display = 'block';
+}
+  
+
+const option1 = document.getElementById('option-1');
+const option2 = document.getElementById('option-2');
+const option3 = document.getElementById('option-3');
+const option4 = document.getElementById('option-4');
+const option5 = document.getElementById('option-5');
+const option6 = document.getElementById('option-6');
+
+const option1answer = document.getElementById('option-1-answer');
+const option2answer = document.getElementById('option-2-answer');
+const option3answer = document.getElementById('option-3-answer');
+const option4answer = document.getElementById('option-4-answer');
+const option5answer = document.getElementById('option-5-answer');
+const option6answer = document.getElementById('option-6-answer');
+
+option1.addEventListener('click', () => {
+    option1answer.style.display = 'block';
+})
+
+option2.addEventListener('click', () => {
+    option2answer.style.display = 'block';
+})
+
+option3.addEventListener('click', () => {
+    option3answer.style.display = 'block';
+})
+
+option4.addEventListener('click', () => {
+    option4answer.style.display = 'block';
+})
+
+option5.addEventListener('click', () => {
+    option5answer.style.display = 'block';
+})
+
+option6.addEventListener('click', () => {
+    option6answer.style.display = 'block';
+})
