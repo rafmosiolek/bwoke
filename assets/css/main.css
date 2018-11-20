@@ -1,15 +1,77 @@
 body {
-    font-family: 'Source Sans Pro', sans-serif; 
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #f7f1e4;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.fixed-pic .logo-link-wrapper .bwoke-logo {
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+    margin-left: 80px;
+}
+
+header,
+#user-interaction,
+#analysis {
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vector-half-circle {
+    position: absolute;
+    right: 100px; 
+    top: 100px;
+}
+
+.vector-half-circle svg {
+    fill: rgb(237, 203, 194);
+    width: 230px;
+    height: 115px;
+    /* animation: spin 4s linear infinite; */
+}
+
+@-moz-keyframes spin { 
+    100% {
+        -moz-transform: rotate(360deg);
+    } 
+}
+@-webkit-keyframes spin { 
+    100% {
+        -webkit-transform: rotate(360deg); 
+    } 
+}
+@keyframes spin { 
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform:rotate(360deg); 
+    } 
+}
+
+.main-heading {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.subheading {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
 .btn-bwoke {
     background: none;
     border: 1px solid #333;
     color: #333;
+    margin: 25px 0;
     padding: 10px 40px;
     max-width: 200px;
     -webkit-transition: all 0.3s ease-in;
@@ -37,29 +99,16 @@ main header .start-section {
 main #user-interaction {
     display: none;
 }
-main #user-interaction .btn-multichoice {
-    -webkit-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-}
 
-main #user-interaction .btn-multichoice.active {
-    background: #6ace8b;
-    border-color: #4a9262;
-}
   
 main #analysis {
     display: none;
 }
 
-main #analysis .explanation {
-    border: 2px solid #ccc;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-}
 
-main #analysis .explanation p {
-    padding: 10px;
+
+.triangle-vector svg {
+    fill: rgba(191, 191, 34, 1)
 }
 
 .tooltip-inner {
@@ -75,7 +124,7 @@ main #analysis .explanation p {
     border-radius: 10px;
     border-style: solid;
     border-color: #ff5722;
-    /* Currently the whole screen is shadowed when a cursot is over it. 
+    /* Currently the whole screen is shadowed when a cursor is over it. 
     Maybe we don't need this part or we may want to shadow only the image. */
     box-shadow: 0 0 0 1000vmax rgba(0, 0, 0, .65);
     pointer-events: none;
@@ -95,3 +144,59 @@ main #analysis .explanation p {
     top: 50%;
     left: 50%;
   }
+
+  .btn-multichoice-wrapper {
+      margin-top: 20%;
+  }
+
+  .btn-multichoice-wrapper .row {
+      margin: 25px 0;
+  }
+
+
+#user-interaction .btn-multichoice {
+    margin: 0 20px;
+    background: rgba(206, 192, 221, 1);
+    width: 139px;
+    height: 120px;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user-interaction .btn-multichoice.active {
+    background:rgba(234, 234, 170, 1);
+    border-color: rgb(197, 197, 135);
+}
+
+#user-interaction .btn-multichoice svg {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    transform: rotate(30deg);
+    
+}
+
+#analysis .explanation {
+    /* border: 2px solid #ccc;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; */
+}
+
+#analysis .explanation p {
+    padding: 10px;
+    font-size: 21px;
+}
+
+#analysis .group-images img {
+    width: 100%;
+    height: 520px;
+}

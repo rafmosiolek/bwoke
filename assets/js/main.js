@@ -21,6 +21,23 @@ for (let i = 0; i < multichoiceBtns.length; i++) {
 const startBtn = document.getElementById('start-btn');
 const userInteraction = document.getElementById('user-interaction');
 const analysis = document.getElementById('analysis');
+const logoLink = document.querySelector('.bwoke-logo');
+const halfCircleVector = document.querySelector('.vector-half-circle svg');
+
+halfCircleVector.style.transform = 'rotate(180deg)'
+
+function rotateHalfCircle() {
+    setTimeout(() => {
+        if (halfCircleVector.style.transform === 'rotate(180deg)') {
+            halfCircleVector.style.transform = 'rotate(90deg)'
+        } else {
+            halfCircleVector.style.transform = 'rotate(180deg)'
+        }
+        rotateHalfCircle();
+    }, 1000);
+}
+
+rotateHalfCircle();
 
 startBtn.addEventListener('click', () => {
     userInteraction.style.display = 'block';
@@ -37,8 +54,17 @@ function checkIfAnalysisShouldBeRevealed() {
 }
 
 function smoothScrollToTheBottomOfThePageWithjQuery() {
-    $('html,body').animate({scrollTop: document.body.scrollHeight}, "slow");
+    $('html,body').animate({scrollTop: document.body.scrollHeight - 100}, "slow");
 }
+
+function smoothScrollToTheTopOfThePageWithjQuery() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+}
+    
+// function smoothScrollToTheNextSection() {
+//     var cls = $(this).closest(".content-section").next().offset().top;
+//     $("html, body").animate({scrollTop: cls}, "slow");
+// }
 
 function selectImagePart(element) {
     var partName = element.getAttribute('selection-area');
@@ -61,3 +87,7 @@ function selectImagePart(element) {
       unselectImagePart(this);
     }, false);
   }
+
+  logoLink.addEventListener('click', () => {
+      smoothScrollToTheTopOfThePageWithjQuery();
+  })
