@@ -134,7 +134,7 @@ main #analysis {
     border-color: #ff5722;
     /* Currently the whole screen is shadowed when a cursor is over it. 
     Maybe we don't need this part or we may want to shadow only the image. */
-    box-shadow: 0 0 0 1000vmax rgba(0, 0, 0, .65);
+    box-shadow: inset 0 0 1000px rgba(255, 255, 255, .15);
     pointer-events: none;
   }
 
