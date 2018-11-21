@@ -25,55 +25,203 @@
     <![endif]-->
 </head>
 <body>
+    <picture class="fixed-pic navbar-fixed-top">
+        <a href="#" class="logo-link-wrapper">
+            <img src="assets/img/bwoke_main_logo.png" class="bwoke-logo" alt="bwoke logo, black letters on white square with pink thick borders" />
+        </a>
+    </picture> 
+
     <main class="container">
+
+        <div class="vector-half-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="1.6000003814697266 15.800000190734863 56.80000305175781 28.400001525878906" role="img" preserveAspectRatio="xMidYMid meet" style="stroke-width: 0px;">
+                <g>
+                    <path d="M30 15.8c-15.7 0-28.4 12.7-28.4 28.4h56.8c0-15.7-12.7-28.4-28.4-28.4z"></path>
+                </g>
+            </svg>
+        </div>
+            
         <header class="row">
             
-            <section class="col-xs-12 col-md-7 pull-right start-section">
-                <h1>bwoke.</h1>
-                <p class="subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="subheading">Ut volutpat lacinia magna porta lacinia. Duis pharetra felis et elit vestibulum congue.</p>
+            <section class="col-md-5 hidden-xs triangle-vector">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="1.600000023841858 2 56.79999923706055 56" role="img" preserveAspectRatio="none" style="stroke-width: 0px;">
+                    <g>
+                        <path d="M1.6 2l56.8 28L1.6 58V2z"></path>
+                    </g>
+                </svg>
+            </section>
+            <section class="col-xs-12 col-md-7 start-section">
+                <h1 class="main-heading">bwoke.</h1>
+                <h2 class="subheading">Investigate the impact of image manipulation.</p>
                 <button id="start-btn" class="btn btn-lg btn-bwoke">Start</button>
             </section>
-            <section class="col-md-5 pull-left hidden-xs">
-                    <img src="assets/img/main_edit_before_after.png" class="img-rounded img-responsive" alt="">
-                </section>
-            
         </header>
 
-        <section id="user-interaction" class="container">
-            <div class="row">
+        <section id="user-interaction" class="container content-section">
+            <h1>Select from the options below to see which techniques have been used on this image:</h1>
+            <div class="row content-section-cols">
                 <section class="col-md-6">
-                    <img src="assets/img/main_edit_before_after.png" class="img-rounded img-responsive" id="img-to-shadow" alt="">
-                    <div class="box" id="nose"></div>
-                    <div class="box" id="eye"></div>
-                    <div class="box" id="lips"></div>
+                    <img src="assets/img/kim-post-edit.png" class="img-rounded img-responsive" id="img-to-shadow" alt="">
+                    <div class="box" id="skin-tone-warmed"></div>
+                    <div class="box" id="cut-out-image"></div>
+                    <div class="box" id="skin-smoothed"></div>
+                    <div class="box" id="composite-image"></div>
+                    <div class="box" id="lips-enlarged"></div>
+                    <div class="box" id="sharpening"></div>
                 </section>
                 <section class="col-md-6">
-                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                    <div class="row">
-                        <div class="col-xs-4 btn btn-default btn-multichoice" role="button" data-toggle="tooltip" title="Lorem ipsum" selection-area="nose">Option 1</div>
-                        <div class="col-xs-4 btn btn-default btn-multichoice" role="button" data-toggle="tooltip" title="Lorem ipsum" selection-area="eye">Option 2</div>
-                        <div class="col-xs-4 btn btn-default btn-multichoice" role="button" data-toggle="tooltip" title="Lorem ipsum" selection-area="lips">Option 3</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-4 btn btn-default btn-multichoice" role="button" data-toggle="tooltip" title="Lorem ipsum" selection-area="lips">Option 4</div>
-                        <div class="col-xs-4 btn btn-default btn-multichoice" role="button" data-toggle="tooltip" title="Lorem ipsum" selection-area="lips">Option 5</div>
-                        <div class="col-xs-4 btn btn-default btn-multichoice" role="button" data-toggle="tooltip" title="Lorem ipsum" selection-area="lips">Option 6</div>
+                    
+                    <div class="btn-multichoice-wrapper">
+                        <img src="assets/img/kim-pre-edit.png" alt="" class="img-rounded img-responsive pre-edit-image">
+                        <div class="btn-multichoice-inner-wrapper">
+                            <div class="row">
+                                <div id="option-1" class="col-xs-3 btn btn-default btn-multichoice" role="button" data-toggle="tooltip" title="one (n.) the general effect of colour on an image (also mood, feel, character)
+                                Warmed (v.) This is when more red is put into an image. It replicates the feel of a sunny day, instead of indoor lighting which normally creates blue tones." selection-area="skin-tone-warmed">
+                                    Skin tone warmed                                    
+                                    <svg viewBox="20.500001907348633 34.999000549316406 159 130.00201416015625" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape" role="img" preserveAspectRatio="xMidYMid meet" style="stroke-width: 0px;">
+                                        <g>
+                                            <path d="M34.955 136.112c-7.985 0-14.455 6.466-14.455 14.444 0 7.977 6.471 14.445 14.455 14.445 7.982 0 14.455-6.468 14.455-14.445 0-7.979-6.473-14.444-14.455-14.444z"></path>
+                                            <path d="M78.317 136.112c-7.982 0-14.455 6.466-14.455 14.444 0 7.977 6.473 14.445 14.455 14.445 7.985 0 14.455-6.467 14.455-14.445.001-7.979-6.47-14.444-14.455-14.444z"></path>
+                                            <path d="M71.141 117.511c0 7.978-6.472 14.445-14.455 14.445s-14.455-6.467-14.455-14.445c0-7.978 6.472-14.445 14.455-14.445s14.455 6.467 14.455 14.445z"></path>
+                                            <path d="M113.242 117.511c0 7.978-6.472 14.445-14.455 14.445s-14.455-6.467-14.455-14.445c0-7.978 6.472-14.445 14.455-14.445s14.455 6.467 14.455 14.445z"></path>
+                                            <path d="M98.787 63.888c7.982 0 14.455-6.467 14.455-14.444 0-7.977-6.473-14.445-14.455-14.445-7.985 0-14.455 6.467-14.455 14.445 0 7.977 6.47 14.444 14.455 14.444z"></path>
+                                            <path d="M78.317 98.912c7.985 0 14.455-6.467 14.455-14.445s-6.471-14.444-14.455-14.444c-7.982 0-14.455 6.466-14.455 14.444 0 7.978 6.473 14.445 14.455 14.445z"></path>
+                                            <path d="M107.227 84.467c0 7.977 6.471 14.445 14.455 14.445 7.982 0 14.455-6.467 14.455-14.445s-6.473-14.444-14.455-14.444c-7.984 0-14.455 6.467-14.455 14.444z"></path>
+                                            <path d="M155.343 117.511c0 7.978-6.472 14.445-14.455 14.445s-14.455-6.467-14.455-14.445c0-7.978 6.472-14.445 14.455-14.445s14.455 6.467 14.455 14.445z"></path>
+                                            <path d="M121.683 136.112c-7.985 0-14.455 6.466-14.455 14.444 0 7.977 6.471 14.445 14.455 14.445 7.982 0 14.455-6.467 14.455-14.445 0-7.979-6.473-14.444-14.455-14.444z"></path>
+                                            <path d="M165.045 136.112c-7.982 0-14.455 6.466-14.455 14.444 0 7.977 6.473 14.445 14.455 14.445 7.985 0 14.455-6.467 14.455-14.445 0-7.979-6.471-14.444-14.455-14.444z"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div id="option-2" class="col-xs-3 btn btn-default btn-multichoice" role="button" data-toggle="tooltip" title="cut-out (n.) a cut out image is when an image has been ‘cut out’ from its background" selection-area="cut-out-image">
+                                    Cut-out image
+                                    <svg viewBox="20.500001907348633 34.999000549316406 159 130.00201416015625" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape" role="img" preserveAspectRatio="xMidYMid meet" style="stroke-width: 0px;">
+                                        <g>
+                                            <path d="M34.955 136.112c-7.985 0-14.455 6.466-14.455 14.444 0 7.977 6.471 14.445 14.455 14.445 7.982 0 14.455-6.468 14.455-14.445 0-7.979-6.473-14.444-14.455-14.444z"></path>
+                                            <path d="M78.317 136.112c-7.982 0-14.455 6.466-14.455 14.444 0 7.977 6.473 14.445 14.455 14.445 7.985 0 14.455-6.467 14.455-14.445.001-7.979-6.47-14.444-14.455-14.444z"></path>
+                                            <path d="M71.141 117.511c0 7.978-6.472 14.445-14.455 14.445s-14.455-6.467-14.455-14.445c0-7.978 6.472-14.445 14.455-14.445s14.455 6.467 14.455 14.445z"></path>
+                                            <path d="M113.242 117.511c0 7.978-6.472 14.445-14.455 14.445s-14.455-6.467-14.455-14.445c0-7.978 6.472-14.445 14.455-14.445s14.455 6.467 14.455 14.445z"></path>
+                                            <path d="M98.787 63.888c7.982 0 14.455-6.467 14.455-14.444 0-7.977-6.473-14.445-14.455-14.445-7.985 0-14.455 6.467-14.455 14.445 0 7.977 6.47 14.444 14.455 14.444z"></path>
+                                            <path d="M78.317 98.912c7.985 0 14.455-6.467 14.455-14.445s-6.471-14.444-14.455-14.444c-7.982 0-14.455 6.466-14.455 14.444 0 7.978 6.473 14.445 14.455 14.445z"></path>
+                                            <path d="M107.227 84.467c0 7.977 6.471 14.445 14.455 14.445 7.982 0 14.455-6.467 14.455-14.445s-6.473-14.444-14.455-14.444c-7.984 0-14.455 6.467-14.455 14.444z"></path>
+                                            <path d="M155.343 117.511c0 7.978-6.472 14.445-14.455 14.445s-14.455-6.467-14.455-14.445c0-7.978 6.472-14.445 14.455-14.445s14.455 6.467 14.455 14.445z"></path>
+                                            <path d="M121.683 136.112c-7.985 0-14.455 6.466-14.455 14.444 0 7.977 6.471 14.445 14.455 14.445 7.982 0 14.455-6.467 14.455-14.445 0-7.979-6.473-14.444-14.455-14.444z"></path>
+                                            <path d="M165.045 136.112c-7.982 0-14.455 6.466-14.455 14.444 0 7.977 6.473 14.445 14.455 14.445 7.985 0 14.455-6.467 14.455-14.445 0-7.979-6.471-14.444-14.455-14.444z"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div id="option-3" class="col-xs-3 btn btn-default btn-multichoice" role="button" data-toggle="tooltip" title="smoothed (v.) give something a flat or regular surface" selection-area="skin-smoothed">
+                                Skin smoothed                                    
+                                    <svg viewBox="20.500001907348633 34.999000549316406 159 130.00201416015625" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape" role="img" preserveAspectRatio="xMidYMid meet" style="stroke-width: 0px;">
+                                        <g>
+                                            <path d="M34.955 136.112c-7.985 0-14.455 6.466-14.455 14.444 0 7.977 6.471 14.445 14.455 14.445 7.982 0 14.455-6.468 14.455-14.445 0-7.979-6.473-14.444-14.455-14.444z"></path>
+                                            <path d="M78.317 136.112c-7.982 0-14.455 6.466-14.455 14.444 0 7.977 6.473 14.445 14.455 14.445 7.985 0 14.455-6.467 14.455-14.445.001-7.979-6.47-14.444-14.455-14.444z"></path>
+                                            <path d="M71.141 117.511c0 7.978-6.472 14.445-14.455 14.445s-14.455-6.467-14.455-14.445c0-7.978 6.472-14.445 14.455-14.445s14.455 6.467 14.455 14.445z"></path>
+                                            <path d="M113.242 117.511c0 7.978-6.472 14.445-14.455 14.445s-14.455-6.467-14.455-14.445c0-7.978 6.472-14.445 14.455-14.445s14.455 6.467 14.455 14.445z"></path>
+                                            <path d="M98.787 63.888c7.982 0 14.455-6.467 14.455-14.444 0-7.977-6.473-14.445-14.455-14.445-7.985 0-14.455 6.467-14.455 14.445 0 7.977 6.47 14.444 14.455 14.444z"></path>
+                                            <path d="M78.317 98.912c7.985 0 14.455-6.467 14.455-14.445s-6.471-14.444-14.455-14.444c-7.982 0-14.455 6.466-14.455 14.444 0 7.978 6.473 14.445 14.455 14.445z"></path>
+                                            <path d="M107.227 84.467c0 7.977 6.471 14.445 14.455 14.445 7.982 0 14.455-6.467 14.455-14.445s-6.473-14.444-14.455-14.444c-7.984 0-14.455 6.467-14.455 14.444z"></path>
+                                            <path d="M155.343 117.511c0 7.978-6.472 14.445-14.455 14.445s-14.455-6.467-14.455-14.445c0-7.978 6.472-14.445 14.455-14.445s14.455 6.467 14.455 14.445z"></path>
+                                            <path d="M121.683 136.112c-7.985 0-14.455 6.466-14.455 14.444 0 7.977 6.471 14.445 14.455 14.445 7.982 0 14.455-6.467 14.455-14.445 0-7.979-6.473-14.444-14.455-14.444z"></path>
+                                            <path d="M165.045 136.112c-7.982 0-14.455 6.466-14.455 14.444 0 7.977 6.473 14.445 14.455 14.445 7.985 0 14.455-6.467 14.455-14.445 0-7.979-6.471-14.444-14.455-14.444z"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div id="option-4" class="col-xs-3 btn btn-default btn-multichoice" role="button" data-toggle="tooltip" title="composite (adj.) made up of several parts or elements" selection-area="composite-image">
+                                    Composite image
+                                    <svg viewBox="20.500001907348633 34.999000549316406 159 130.00201416015625" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape" role="img" preserveAspectRatio="xMidYMid meet" style="stroke-width: 0px;">
+                                        <g>
+                                            <path d="M34.955 136.112c-7.985 0-14.455 6.466-14.455 14.444 0 7.977 6.471 14.445 14.455 14.445 7.982 0 14.455-6.468 14.455-14.445 0-7.979-6.473-14.444-14.455-14.444z"></path>
+                                            <path d="M78.317 136.112c-7.982 0-14.455 6.466-14.455 14.444 0 7.977 6.473 14.445 14.455 14.445 7.985 0 14.455-6.467 14.455-14.445.001-7.979-6.47-14.444-14.455-14.444z"></path>
+                                            <path d="M71.141 117.511c0 7.978-6.472 14.445-14.455 14.445s-14.455-6.467-14.455-14.445c0-7.978 6.472-14.445 14.455-14.445s14.455 6.467 14.455 14.445z"></path>
+                                            <path d="M113.242 117.511c0 7.978-6.472 14.445-14.455 14.445s-14.455-6.467-14.455-14.445c0-7.978 6.472-14.445 14.455-14.445s14.455 6.467 14.455 14.445z"></path>
+                                            <path d="M98.787 63.888c7.982 0 14.455-6.467 14.455-14.444 0-7.977-6.473-14.445-14.455-14.445-7.985 0-14.455 6.467-14.455 14.445 0 7.977 6.47 14.444 14.455 14.444z"></path>
+                                            <path d="M78.317 98.912c7.985 0 14.455-6.467 14.455-14.445s-6.471-14.444-14.455-14.444c-7.982 0-14.455 6.466-14.455 14.444 0 7.978 6.473 14.445 14.455 14.445z"></path>
+                                            <path d="M107.227 84.467c0 7.977 6.471 14.445 14.455 14.445 7.982 0 14.455-6.467 14.455-14.445s-6.473-14.444-14.455-14.444c-7.984 0-14.455 6.467-14.455 14.444z"></path>
+                                            <path d="M155.343 117.511c0 7.978-6.472 14.445-14.455 14.445s-14.455-6.467-14.455-14.445c0-7.978 6.472-14.445 14.455-14.445s14.455 6.467 14.455 14.445z"></path>
+                                            <path d="M121.683 136.112c-7.985 0-14.455 6.466-14.455 14.444 0 7.977 6.471 14.445 14.455 14.445 7.982 0 14.455-6.467 14.455-14.445 0-7.979-6.473-14.444-14.455-14.444z"></path>
+                                            <path d="M165.045 136.112c-7.982 0-14.455 6.466-14.455 14.444 0 7.977 6.473 14.445 14.455 14.445 7.985 0 14.455-6.467 14.455-14.445 0-7.979-6.471-14.444-14.455-14.444z"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div id="option-5" class="col-xs-3 btn btn-default btn-multichoice" role="button" data-toggle="tooltip" title="enlarged (v.) made bigger" selection-area="lips-enlarged">
+                                    Lips enlarged
+                                    <svg viewBox="20.500001907348633 34.999000549316406 159 130.00201416015625" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape" role="img" preserveAspectRatio="xMidYMid meet" style="stroke-width: 0px;">
+                                        <g>
+                                            <path d="M34.955 136.112c-7.985 0-14.455 6.466-14.455 14.444 0 7.977 6.471 14.445 14.455 14.445 7.982 0 14.455-6.468 14.455-14.445 0-7.979-6.473-14.444-14.455-14.444z"></path>
+                                            <path d="M78.317 136.112c-7.982 0-14.455 6.466-14.455 14.444 0 7.977 6.473 14.445 14.455 14.445 7.985 0 14.455-6.467 14.455-14.445.001-7.979-6.47-14.444-14.455-14.444z"></path>
+                                            <path d="M71.141 117.511c0 7.978-6.472 14.445-14.455 14.445s-14.455-6.467-14.455-14.445c0-7.978 6.472-14.445 14.455-14.445s14.455 6.467 14.455 14.445z"></path>
+                                            <path d="M113.242 117.511c0 7.978-6.472 14.445-14.455 14.445s-14.455-6.467-14.455-14.445c0-7.978 6.472-14.445 14.455-14.445s14.455 6.467 14.455 14.445z"></path>
+                                            <path d="M98.787 63.888c7.982 0 14.455-6.467 14.455-14.444 0-7.977-6.473-14.445-14.455-14.445-7.985 0-14.455 6.467-14.455 14.445 0 7.977 6.47 14.444 14.455 14.444z"></path>
+                                            <path d="M78.317 98.912c7.985 0 14.455-6.467 14.455-14.445s-6.471-14.444-14.455-14.444c-7.982 0-14.455 6.466-14.455 14.444 0 7.978 6.473 14.445 14.455 14.445z"></path>
+                                            <path d="M107.227 84.467c0 7.977 6.471 14.445 14.455 14.445 7.982 0 14.455-6.467 14.455-14.445s-6.473-14.444-14.455-14.444c-7.984 0-14.455 6.467-14.455 14.444z"></path>
+                                            <path d="M155.343 117.511c0 7.978-6.472 14.445-14.455 14.445s-14.455-6.467-14.455-14.445c0-7.978 6.472-14.445 14.455-14.445s14.455 6.467 14.455 14.445z"></path>
+                                            <path d="M121.683 136.112c-7.985 0-14.455 6.466-14.455 14.444 0 7.977 6.471 14.445 14.455 14.445 7.982 0 14.455-6.467 14.455-14.445 0-7.979-6.473-14.444-14.455-14.444z"></path>
+                                            <path d="M165.045 136.112c-7.982 0-14.455 6.466-14.455 14.444 0 7.977 6.473 14.445 14.455 14.445 7.985 0 14.455-6.467 14.455-14.445 0-7.979-6.471-14.444-14.455-14.444z"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div id="option-6" class="col-xs-3 btn btn-default btn-multichoice" role="button" data-toggle="tooltip" title="sharpening (v.) enhancing the edges of the image" selection-area="sharpening">
+                                    Sharpening
+                                    <svg viewBox="20.500001907348633 34.999000549316406 159 130.00201416015625" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape" role="img" preserveAspectRatio="xMidYMid meet" style="stroke-width: 0px;">
+                                        <g>
+                                            <path d="M34.955 136.112c-7.985 0-14.455 6.466-14.455 14.444 0 7.977 6.471 14.445 14.455 14.445 7.982 0 14.455-6.468 14.455-14.445 0-7.979-6.473-14.444-14.455-14.444z"></path>
+                                            <path d="M78.317 136.112c-7.982 0-14.455 6.466-14.455 14.444 0 7.977 6.473 14.445 14.455 14.445 7.985 0 14.455-6.467 14.455-14.445.001-7.979-6.47-14.444-14.455-14.444z"></path>
+                                            <path d="M71.141 117.511c0 7.978-6.472 14.445-14.455 14.445s-14.455-6.467-14.455-14.445c0-7.978 6.472-14.445 14.455-14.445s14.455 6.467 14.455 14.445z"></path>
+                                            <path d="M113.242 117.511c0 7.978-6.472 14.445-14.455 14.445s-14.455-6.467-14.455-14.445c0-7.978 6.472-14.445 14.455-14.445s14.455 6.467 14.455 14.445z"></path>
+                                            <path d="M98.787 63.888c7.982 0 14.455-6.467 14.455-14.444 0-7.977-6.473-14.445-14.455-14.445-7.985 0-14.455 6.467-14.455 14.445 0 7.977 6.47 14.444 14.455 14.444z"></path>
+                                            <path d="M78.317 98.912c7.985 0 14.455-6.467 14.455-14.445s-6.471-14.444-14.455-14.444c-7.982 0-14.455 6.466-14.455 14.444 0 7.978 6.473 14.445 14.455 14.445z"></path>
+                                            <path d="M107.227 84.467c0 7.977 6.471 14.445 14.455 14.445 7.982 0 14.455-6.467 14.455-14.445s-6.473-14.444-14.455-14.444c-7.984 0-14.455 6.467-14.455 14.444z"></path>
+                                            <path d="M155.343 117.511c0 7.978-6.472 14.445-14.455 14.445s-14.455-6.467-14.455-14.445c0-7.978 6.472-14.445 14.455-14.445s14.455 6.467 14.455 14.445z"></path>
+                                            <path d="M121.683 136.112c-7.985 0-14.455 6.466-14.455 14.444 0 7.977 6.471 14.445 14.455 14.445 7.982 0 14.455-6.467 14.455-14.445 0-7.979-6.473-14.444-14.455-14.444z"></path>
+                                            <path d="M165.045 136.112c-7.982 0-14.455 6.466-14.455 14.444 0 7.977 6.473 14.445 14.455 14.445 7.985 0 14.455-6.467 14.455-14.445 0-7.979-6.471-14.444-14.455-14.444z"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
+            <section id="option-1-answer" class="multichoice-answer">
+                <h2 class="answer-result">Correct!</h2>
+                <p> In this case a layer of red pixels was added across the whole image and then removed from Kim’s hair and clothes. This gives the impression of good health. It is often easiest to tell if an image has had a colour layer added in white or black areas of the image.</p>   
+            </section>
+            <section id="option-2-answer" class="multichoice-answer">
+                <h2 class="answer-result">Incorrect!</h2>
+                <p>This image has not been cut out. Images that are cut out are often removed from their background and put on to a new one. This is very common with advertising images.</p>
+            </section>
+            <section id="option-3-answer" class="multichoice-answer">
+                <h2 class="answer-result">Correct!</h2>
+                <p>This has been done in a number of ways to this image including creating layers of colour to highlight the cheekbones and areas under the eyes. This is done to images for a number of reasons including covering blemishes and removing signs of aging.</p>
+            </section>
+            <section id="option-4-answer" class="multichoice-answer">
+                <h2 class="answer-result">Incorrect!</h2>
+                <p>This is a single image with layers of work on top of it. Composite images are often used for group shots or higher definition images than are achievable with a camera.</p>
+            </section>
+            <section id="option-5-answer" class="multichoice-answer">
+                <h2 class="answer-result">Correct!</h2>
+                <p>This has been achieved by painting lips slightly beyond Kim’s normal lip line and adding more depth to her lips to create the impression of fullness. Full lips are often associated with youth.</p>
+            </section>
+            <section id="option-6-answer" class="multichoice-answer">
+                <h2 class="answer-result">Incorrect!</h2>
+                <p>This image has not been sharpened although the process of tightening her jaw line on the left hand side of the image has could be misconstrued as this. It is very common for a person’s features to be softened or blurred in fashion photography.</p>
+            </section>
+            
+            <div class="row group-images">
+                    <div class="col-xs-6 pre-image">
+                        <img src="assets/img/kim-pre-edit.png" alt="">
+                    </div>
+                    <div class="col-xs-6 post-image">
+                        <img src="assets/img/kim-post-edit.png" alt="">
+                    </div>
+                </div>
         </section>
-        
-        <section id="analysis" class="container">
-            <div class="row">
-                <article class="col-xs-12 explanation">
-                    <p>In orci quam, molestie ut varius vel, sollicitudin vitae nulla. Vivamus pretium consectetur nisi ac auctor. Nam eu eros faucibus, vestibulum urna quis, varius augue. Morbi et tincidunt ante. Cras mattis lacus diam. Proin sagittis tellus vitae leo venenatis, sed ultricies sem maximus. Curabitur et varius enim. Maecenas dignissim ultricies arcu nec luctus. Praesent porta arcu et nisl tristique, ac semper ante ornare. Morbi venenatis nisi eros, eget ultrices magna elementum non.</p>
-                </article>
-            </div>
-        </section>
-
     </main>
 
+    
     
     <!-- Google Dev Hosted jQuery for compontent libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
