@@ -9,8 +9,10 @@ for (let i = 0; i < multichoiceBtns.length; i++) {
             } else if (this.classList.contains('active')) {
                 this.classList.toggle('active');
             } else {
-                this.classList.toggle('active')
-                activeItems.push(this);
+                this.classList.toggle('active');
+                if (this.classList.contains('correct')) {
+                    activeItems.push(this);
+                }
             }
         }
         ev.preventDefault();
