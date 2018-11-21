@@ -170,7 +170,7 @@ main #analysis {
     top: 55%;
     left: 40%;
     width: 100px;
-    height: 45px;
+    height: 55px;
 }
 
 #sharpening {
@@ -223,12 +223,6 @@ main #analysis {
     bottom: -8px;
     transform: rotate(30deg);
     
-}
-
-#analysis .explanation {
-    /* border: 2px solid #ccc;
-    -webkit-border-radius: 4px;
-    border-radius: 4px; */
 }
 
 #analysis .explanation p {

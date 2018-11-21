@@ -47,9 +47,7 @@ startBtn.addEventListener('click', () => {
 function checkIfAnalysisShouldBeRevealed() {
     console.log('checkIfAnalysisShouldBeRevealed called');
     if (activeItems.length > 2) {
-        // analysis.style.display = 'block';
         smoothScrollToTheBottomOfThePageWithjQuery();
-        // revealTheBeforeAfterImages();
         revealThePreEditImage();
         hideMultiChoiceButtons();
     }
@@ -72,11 +70,6 @@ function smoothScrollToTheBottomOfThePageWithjQuery() {
 function smoothScrollToTheTopOfThePageWithjQuery() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
 }
-    
-// function smoothScrollToTheNextSection() {
-//     var cls = $(this).closest(".content-section").next().offset().top;
-//     $("html, body").animate({scrollTop: cls}, "slow");
-// }
 
 function selectImagePart(element) {
     var partName = element.getAttribute('selection-area');
@@ -106,14 +99,6 @@ function selectImagePart(element) {
 
 
 const multichoiceAnswers = document.querySelectorAll('.multichoice-answer');
-// for (let i = 0; i < multichoiceBtns.length; i++) {
-//     if (multichoiceBtns[i].id === option + (i + 1)) {
-        
-//     }
-//     for (let i = 0; i < multichoiceAnswers.length; i++) {
-//         console.log(multichoiceAnswers[i].id)
-//     }
-// }
 
 function revealTheBeforeAfterImages() {
     const beforeAfterImgsWrapper = document.querySelector('.group-images');
