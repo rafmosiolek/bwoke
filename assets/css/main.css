@@ -100,6 +100,10 @@ main #user-interaction {
     display: none;
 }
 
+main #user-interaction h1 {
+    margin-top: 45px;
+}
+
   
 main #analysis {
     display: none;
@@ -134,24 +138,52 @@ main #analysis {
     pointer-events: none;
   }
 
-  #nose {
-    top: 70%;
-    left: 45%;
-  }
+#skin-tone-warmed {
+    top: 22%;
+    left: 28%;
+    width: 250px;
+    height: 250px;
+}
   
-  #eye {
-    top: 10%;
-    left: 38%;
-  }
+#cut-out-image {
+    top: 12%;
+    left: 70%;
+    width: 77px;
+    height: 124px;
+}
   
-  #lips {
-    top: 50%;
-    left: 50%;
-  }
+#skin-smoothed {
+    top: 40%;
+    left: 51%;
+    width: 74px;
+    height: 64px;
+}
 
-  .btn-multichoice-wrapper {
-      margin-top: 20%;
-  }
+#composite-image {
+    top: 4px;
+    left: 48px;
+    width: 500px;
+    height: 500px;
+}
+
+#lips-enlarged {
+    top: 55%;
+    left: 40%;
+    width: 100px;
+    height: 45px;
+}
+
+#sharpening {
+    top: 20%;
+    right: 0;
+    height: 200px;
+
+}
+
+
+.content-section-cols {
+    margin-top: 5%;
+}
 
   .btn-multichoice-wrapper .row {
       margin: 25px 0;
@@ -223,4 +255,9 @@ main #analysis {
 
 .multichoice-answer p {
     font-size: 18px;
+}
+
+.pre-edit-image {
+    display: none;
+    width: 90%;
 }

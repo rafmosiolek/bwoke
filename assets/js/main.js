@@ -49,10 +49,20 @@ function checkIfAnalysisShouldBeRevealed() {
     if (activeItems.length > 2) {
         // analysis.style.display = 'block';
         smoothScrollToTheBottomOfThePageWithjQuery();
-        revealTheBeforeAfterImages();
-        
-        
+        // revealTheBeforeAfterImages();
+        revealThePreEditImage();
+        hideMultiChoiceButtons();
     }
+}
+
+function revealThePreEditImage() {
+    const preImage = document.querySelector('.pre-edit-image');
+    preImage.style.display = 'block';
+}
+
+function hideMultiChoiceButtons() {
+    const multiChoiceBtnsWrapper = document.querySelector('.btn-multichoice-inner-wrapper');
+    multiChoiceBtnsWrapper.style.display = 'none';
 }
 
 function smoothScrollToTheBottomOfThePageWithjQuery() {
@@ -109,7 +119,6 @@ function revealTheBeforeAfterImages() {
     const beforeAfterImgsWrapper = document.querySelector('.group-images');
     beforeAfterImgsWrapper.style.display = 'block';
 }
-  
 
 const option1 = document.getElementById('option-1');
 const option2 = document.getElementById('option-2');
